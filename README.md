@@ -36,7 +36,7 @@
 <div align="left">
 <ul>
   <!-- Category 1 -->
-  <li>📂 <a href="#">IT Fundamentals Writeups</a>
+  <li>📂<b> IT Fundamentals Writeups</b>
     <ul>
       <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
       <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
@@ -46,7 +46,7 @@
   </li>
   <br>
   <!-- Category 2 -->
-  <li>📂 <a href="#">Web Penetration Testing</a>
+  <li>📂<b> Web Penetration Testing</b>
     <ul>
       <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
       <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
@@ -56,7 +56,7 @@
   </li>
   <br>
   <!-- Category 3 -->
-  <li>📂 <a href="#">Network and OS Offensive</a>
+  <li>📂<b> Network and OS Offensive</b>
     <ul>
       <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
       <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
@@ -66,7 +66,7 @@
   </li>
   <br>
   <!-- Category 4 -->
-  <li>📂 <a href="#">Automation and Scripting</a>
+  <li>📂<b> Automation and Scripting</b>
     <ul>
       <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
       <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
@@ -76,7 +76,7 @@
   </li>
   <br>
   <!-- Category 5 -->
-  <li>📂 <a href="#">CTF and Lab Writeups</a>
+  <li>📂<b> CTF and Lab Writeups</b>
     <ul>
       <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
       <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
@@ -91,8 +91,7 @@
 <details>
 <summary><b>📊 Live Publication Analytics & Data Pipeline</b></summary><br>
 <div align="left">
-
-  <h4>📈 Live Blog Metrics</h4>
+&nbsp; &nbsp; &nbsp; &nbsp; <b>📈 Live Blog Metrics</b>
   <!-- HASHNODE-DATA-START -->
   - 📝 <b>Total Published Articles:</b> 0
   - 👥 <b>Newsletter Subscribers:</b> 0
