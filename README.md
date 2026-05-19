@@ -1,4 +1,4 @@
-<h1 align="center">✍️ The Digital Ink : Technical Writing Archive</h1>
+<h1 align="center">✍️ Root Shadow Writeups : Technical Writing Archive</h1>
 <div align="center">
   <code> Environment: Hashnode Blog </code> | <code> Purpose: Knowledge Sharing </code> | <code> Engine: Markdown • Git </code>
 </div>
@@ -8,8 +8,10 @@
 <h3 align="left">🚀 Repository Overview</h3>
 <div align="left">
 &nbsp; &nbsp; &nbsp; &nbsp; Welcome to my centralized technical writing archive. This repository serves as a permanent, version-controlled<br>
-&nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published on my platform is mirrored here.<br><br>
-&nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where my thoughts transform into structured knowledge.
+&nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published on my platform is mirrored here.
+&nbsp; &nbsp; &nbsp; &nbsp; here. <br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where my thoughts transform into structured
+&nbsp; &nbsp; &nbsp; &nbsp; knowledge.
 </div>
 
 <hr>
