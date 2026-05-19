@@ -2,11 +2,11 @@ import requests
 import re
 from datetime import datetime
 
-# إعدادات الحساب والـ API لـ Hashnode
+# إعدادات الحساب والـ API الرسمي المعتمد في مقال Hashnode
 USERNAME = "mira3zzeldin"
-API_URL = "https://hashnode.com"
+API_URL = "https://gql.hashnode.com/"  # الرابط الرسمي المعتمد بالمقال
 
-# استعلام GraphQL لجلب البيانات وتاريخ آخر مقال
+# استعلام GraphQL المحدث والمطابق لتوثيق الـ Schema الرسمي لـ Hashnode
 query = """
 query GetBlogStats($username: String!) {
     user(username: $username) {
@@ -21,7 +21,7 @@ query GetBlogStats($username: String!) {
                             }
                         }
                     }
-                    followersCount 
+                    subscribersCount
                 }
             }
         }
@@ -32,20 +32,24 @@ query GetBlogStats($username: String!) {
 variables = {"username": USERNAME}
 
 try:
-    # الاتصال بالـ API وجلب البيانات
+    # إرسال طلب POST المتوافق مع Vanilla JS المدعوم بالمقال
     response = requests.post(API_URL, json={'query': query, 'variables': variables})
     response.raise_for_status()
     
     res_data = response.json()
+    
+    # استخراج مصفوفة البيانات بأمان تامة
     pub_edges = res_data.get('data', {}).get('user', {}).get('publications', {}).get('edges', [])
     
     if pub_edges:
-        pub_node = pub_edges[0]['node']
-        total_posts = pub_node['posts']['totalDocuments']
-        subscribers = pub_node['followersCount']
+        pub_node = pub_edges[0]['node']  # الوصول البرميجي الصحيح لأول عقدة مدونة
+        total_posts = pub_node.get('posts', {}).get('totalDocuments', 0)
+        subscribers = pub_node.get('subscribersCount', 0)
         
-        if total_posts > 0 and pub_node['posts']['edges']:
-            raw_date = pub_node['posts']['edges'][0]['node']['publishedAt']
+        post_edges = pub_node.get('posts', {}).get('edges', [])
+        if total_posts > 0 and post_edges:
+            raw_date = post_edges[0]['node']['publishedAt']
+            # تحويل تنسيق الوقت القياسي ISO إلى صيغة مقروءة للبشر
             date_obj = datetime.strptime(raw_date.split('T')[0], "%Y-%m-%d")
             last_published = date_obj.strftime("%b %d, %Y")
         else:
@@ -55,10 +59,10 @@ try:
         subscribers = 0
         last_published = "No publication found"
 
-    # حساب تقديري ذكي للمشاهدات الحية
+    # حساب تقديري ذكي ومستقر للمشاهدات الحية
     estimated_views = total_posts * 42 
 
-    # صياغة كود الـ HTML المعتمد من قِبلكِ بنفس مسافاتكِ الدقيقة تماماً
+    # صياغة كود الـ HTML المعتمد من قِبلكِ مع الحفاظ على المسافات الهامشية الدقيقة
     new_content = f"""  <!-- HASHNODE-DATA-START -->
   <ul>
     <li>&nbsp; &nbsp; 📝 <b>Total Published Articles :</b> {total_posts}</li>
@@ -68,18 +72,19 @@ try:
   </ul>
   <!-- HASHNODE-DATA-END -->"""
 
-    # قراءة وتحديث ملف README.md
+    # فتح وقراءة ملف الـ README للتعديل عليه ديناميكياً
     with open("README.md", "r", encoding="utf-8") as file:
         readme_content = file.read()
 
-    # تعديل نمط البحث ليتغاضى عن أي مسافات بادئة أو هوامش متغيرة
+    # البحث عن العلامات المخفية واستبدالها بالبيانات الجديدة الحية
     pattern = r"[ \t]*<!-- HASHNODE-DATA-START -->.*?<!-- HASHNODE-DATA-END -->"
     updated_readme = re.sub(pattern, new_content, readme_content, flags=re.DOTALL)
 
+    # حفظ وتثبيت التغييرات النهائية داخل الملف
     with open("README.md", "w", encoding="utf-8") as file:
         file.write(updated_readme)
         
-    print("🤖 Success: README.md regex pattern matched and updated successfully!")
+    print("🤖 Success: GraphQL v3 Pipeline executed. README.md updated successfully!")
 
 except Exception as e:
-    print(f"❌ Error: {e}")
+    print(f"❌ Automation Error: {e}")
