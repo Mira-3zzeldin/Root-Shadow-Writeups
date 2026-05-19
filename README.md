@@ -92,30 +92,24 @@
 <details>
 <summary><b>📊 Live Publication Analytics & Data Pipeline</b></summary><br>
 <div align="left">
-&nbsp; &nbsp; &nbsp; &nbsp; <b>📈 Live Blog Metrics</b>
   <!-- HASHNODE-DATA-START -->
   <ul>
-    <li>&nbsp; &nbsp; 📝 <b>Total Published Articles:</b> 0</li>
-    <li>&nbsp; &nbsp; 👥 <b>Newsletter Subscribers:</b> 0</li>
-    <li>&nbsp; &nbsp; 👁️ <b>Total Publication Views:</b> 0</li>
-    <li>&nbsp; &nbsp; 📅 <b>Last Article Published:</b> Fetching...</li>
+    <li>&nbsp; &nbsp; 📝 <b>Total Published Articles :</b> 0</li>
+    <li>&nbsp; &nbsp; 👥 <b>Newsletter Subscribers :</b> 0</li>
+    <li>&nbsp; &nbsp; 👁️ <b>Total Publication Views :</b> 0</li>
+    <li>&nbsp; &nbsp; 📅 <b>Last Article Published :</b> Fetching ...</li>
   </ul>
   <!-- HASHNODE-DATA-END -->
-
   <br>
-
-&nbsp; &nbsp; &nbsp; &nbsp; <b>⚙️ Data Pipeline & Synchronization Status</b>
   <ul>
     <li>&nbsp; &nbsp; 🛰️ <b>Data Feed :</b> Upstream connection via Hashnode GraphQL API (v2).</li>
     <li>&nbsp; &nbsp; ⚡ <b>Automation Mode :</b> Daily Scheduled Cron Job <code>[0 0 * * *]</code> via GitHub Actions.</li>
     <li>&nbsp; &nbsp; 🟢 <b>Archive Integrity :</b> 100% Synced ( All web articles mirrored locally in Markdown ).</li>
     <li>&nbsp; &nbsp; 🐳 <b>Runtime Environment :</b> <code>ubuntu-latest</code> virtual runner utilizing <code>Python 3.x</code>.</li>
   </ul>
+  <br>
 </div>
-<br><hr><br>
 </details>
-
-
 
 <hr>
 
