@@ -9,7 +9,7 @@
 <div align="left">
 &nbsp; &nbsp; &nbsp; &nbsp; Welcome to my centralized technical writing archive. This repository serves as a permanent, version-controlled<br>
 &nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published is mirrored here.<br><br>
-&nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where thoughts takes a structured shape.
+&nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where thoughts take a structured shape.
 </div>
 
 <hr>
