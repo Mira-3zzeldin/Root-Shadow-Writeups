@@ -85,27 +85,29 @@
 
 <hr>
 
-<h3 align="left">🤝 Connect & Subscribe</h3>
+<h3 align="left">🤝 Connect & Collaboration</h3>
 <div>
-&nbsp; &nbsp; &nbsp; &nbsp; If you enjoy deep-dive technical content, consider subscribing to the live newsletter or connecting<br>
-&nbsp; &nbsp; &nbsp; &nbsp; with me to discuss cybersecurity, code, or technical writing. 🛡️<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; I am always looking to sync with fellow researchers, recruiters, and elite CTF teams. Whether you want to discuss<br>
+&nbsp; &nbsp; &nbsp; &nbsp; a technical deep-dive, suggest a topic to write about, or report an inaccuracy - I value every piece of <br>
+&nbsp; &nbsp; &nbsp; &nbsp; feedback from the community. 🛡️<br><br>
 
-&nbsp; &nbsp; &nbsp; &nbsp; 🌐 <b>Find me on :</b> <a href="https://www.linkedin.com/in/mira3zzeldin/">LinkedIn</a> | <a href="https://hashnode.com/@mira3zzeldin">Technical Blog</a> | <a href="https://x.com/Mira3zzeldin">Twitter</a> | <a href="mailto:mira3zzeldin@gmail.com">Gmail</a><br>
-&nbsp; &nbsp; &nbsp; &nbsp; 📢 <b>Interaction :</b> Spotted a typo or want to suggest an article topic? Feel free to open an <a href="#">Issue</a>!
+&nbsp; &nbsp; &nbsp; &nbsp; 🌐 <b>Find me on :</b> <a href="https://www.linkedin.com/in/mira3zzeldin/">LinkedIn</a> | <a href="https://hashnode.com/@mira3zzeldin">Technical Blog</a> | <a href="Link">Discord</a> | <a href="https://x.com/Mira3zzeldin">Twitter</a> | <a href="mailto:mira3zzeldin@gmail.com">Gmail</a><br>
+&nbsp; &nbsp; &nbsp; &nbsp; 📢 <b>Feedback :</b> Found a mistake ? Open an <a href="https://github.com/Mira-3zzeldin/Infosec-Journey/issues/new?template=content-feedback.md">Issue</a>. Have a suggestion ? Let's talk in <a href="https://github.com/Mira-3zzeldin/Infosec-Journey/discussions">Discussions</a>.
 </div>
 
 <hr>
 
-<h3 align="left">📜 License</h3>
+<h3 align="left">⚠️ Disclaimer</h3>
 <div>
-&nbsp; &nbsp; &nbsp; &nbsp; The articles and code samples housed in this repository are licensed under the <b>MIT License</b>. <br>
-&nbsp; &nbsp; &nbsp; &nbsp; Feel free to share, adapt, or build upon the material as long as appropriate credit is given.
+&nbsp; &nbsp; &nbsp; &nbsp; This repository is created for educational purposes only. I am committed to <b>Ethical Hacking</b>. Any unauthorized <br>
+&nbsp; &nbsp; &nbsp; &nbsp; use of these techniques against systems without prior consent is strictly illegal.
 </div>
 
 <hr>
 
 <div align="center">
-<p><b>"Knowledge is power, but sharing it is the true amplification."</b> 🚀</p>
-<p><small>© 2026 | Technical Writing Archive | by Mira-3zzeldin</small></p>
+<p><b>"In the digital shadows, precision is the only difference between a researcher and a ghost."</b> 🛡️</p>
+<p><small>© 2026 | Offensive Security Learning Journey | by Mira-3zzeldin</small></p>
 <p><b>[ 🏁 End of Session ]</b></p>
 </div>
+
