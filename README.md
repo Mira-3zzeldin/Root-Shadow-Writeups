@@ -92,9 +92,8 @@
 <details>
 <summary><b>🔬 Technical Testing Environment (Home Lab)</b></summary><br>
 <div align="left">
-&nbsp; &nbsp; &nbsp; &nbsp; Verification before publication is a core principle. Every technical write-up, attack vector, and<br>
-&nbsp; &nbsp; &nbsp; &nbsp; script archived here is first simulated, analyzed, and broken down within a fully isolated<br>
-&nbsp; &nbsp; &nbsp; &nbsp; virtualized research environment :<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; Verification before publication is a core principle. Every technical write-up, attack vector, and script archived<br>
+&nbsp; &nbsp; &nbsp; &nbsp; here is first simulated, analyzed, and broken down within a fully isolated virtualized research environment :<br>
   <ul>
     <li>&nbsp; &nbsp; 🛡️ <b>Offensive Platform :</b> Custom Kali Linux / Parrot OS deployments tailored for penetration testing.</li>
     <li>&nbsp; &nbsp; 🖥️ <b>Hypervisor Matrix :</b> VMware Workstation & Oracle VirtualBox infrastructure for secure sandbox isolation.</li>
