@@ -8,7 +8,7 @@
 <h3 align="left">🚀 Repository Overview</h3>
 <div align="left">
 &nbsp; &nbsp; &nbsp; &nbsp; Welcome to my centralized technical writing archive. This repository serves as a permanent, version-controlled<br>
-&nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published on my platform is mirrored
+&nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published on my platform is mirrored<br>
 &nbsp; &nbsp; &nbsp; &nbsp; here. <br><br>
 &nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where thoughts takes a structured shape.
 </div>
@@ -90,25 +90,16 @@
 </details>
 
 <details>
-<summary><b>📊 Live Publication Analytics & Data Pipeline</b></summary><br>
+<summary><b>🔮 Inside the Root Shadow Publication</b></summary><br>
 <div align="left">
-  <!-- HASHNODE-DATA-START -->
-  <ul>
-    <li>&nbsp; &nbsp; 📝 <b>Total Published Articles :</b> 0</li>
-    <li>&nbsp; &nbsp; 👥 <b>Newsletter Subscribers :</b> 0</li>
-    <li>&nbsp; &nbsp; 👁️ <b>Total Publication Views :</b> 0</li>
-    <li>&nbsp; &nbsp; 📅 <b>Last Article Published :</b> Fetching ...</li>
-  </ul>
-  <!-- HASHNODE-DATA-END -->
-  <br>
-  <ul>
-    <li>&nbsp; &nbsp; 🛰️ <b>Data Feed :</b> Upstream connection via Hashnode GraphQL API (v2).</li>
-    <li>&nbsp; &nbsp; ⚡ <b>Automation Mode :</b> Daily Scheduled Cron Job <code>[0 0 * * *]</code> via GitHub Actions.</li>
-    <li>&nbsp; &nbsp; 🟢 <b>Archive Integrity :</b> 100% Synced ( All web articles mirrored locally in Markdown ).</li>
-    <li>&nbsp; &nbsp; 🐳 <b>Runtime Environment :</b> <code>ubuntu-latest</code> virtual runner utilizing <code>Python 3.x</code>.</li>
-  </ul>
-  <br>
+&nbsp; &nbsp; &nbsp; &nbsp; <b>Root Shadow</b> is a digital playground where offensive security meets structured synthesis. <br>
+&nbsp; &nbsp; &nbsp; &nbsp; The core goal of this publication is to prove understanding through documentation. <br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; Every article is crafted following a strict pipeline:<br>
+&nbsp; &nbsp; &nbsp; &nbsp; 🧩 <b>Deconstruct:</b> Breaking down standard computing architectures and components.<br>
+&nbsp; &nbsp; &nbsp; &nbsp; 🔬 <b>Analyze:</b> Investigating how these components can be manipulated or misconfigured.<br>
+&nbsp; &nbsp; &nbsp; &nbsp; ✍️ <b>Document:</b> Writing actionable, highly-visual guides to retain and share the knowledge.<br>
 </div>
+<br><hr><br>
 </details>
 
 <hr>
