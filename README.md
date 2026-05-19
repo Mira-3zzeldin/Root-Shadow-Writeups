@@ -89,23 +89,21 @@
 </details>
 
 <details>
-<summary><b>🛠️ Tech Stack & Learning Arsenal</b></summary><br>
+<summary><b>📊 Blog Analytics & Publication Metrics</b></summary><br>
 <div align="left">
-  <!-- Core Operating Systems -->
-  <img src="https://shields.io" alt="Linux" />
-  <img src="https://shields.io" alt="Windows" />
+  &nbsp; &nbsp; <strong>⚡ Live Deployment Status</strong>
+  <br><br>
+  <!-- Hashnode Custom Banner/Card Structure -->
+  <a href="https://hashnode.com" target="_blank">
+    <code>Hashnode Badge</code>
+  </a>
+      <code>Sync Badge</code>
   
-  <!-- Scripting languages -->
-  <img src="https://shields.io" alt="Python" />
-  <img src="https://shields.io" alt="Bash" />
-  
-  <!-- Platforms & Tools -->
-  <img src="https://shields.io" alt="Git" />
-  <img src="https://shields.io" alt="Markdown" />
-</div>
-<br>
-<div align="left">
-  &nbsp; &nbsp; <b>Current Sprint:</b> Mastering core routing, switching protocols, and setting up lab infrastructures.
+  <br><br>
+  <ul>
+    <li><b>Pipeline:</b> Live Blog <a href="https://hashnode.com">mira3zzeldin.hashnode.dev</a> ➡️ Automated GitHub Commit.</li>
+    <li><b>Operational Mode:</b> Continuous Integration (CI) on every new technical publication.</li>
+  </ul>
 </div>
 <br><hr><br>
 </details>
