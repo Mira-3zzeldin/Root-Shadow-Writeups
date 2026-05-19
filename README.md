@@ -90,10 +90,10 @@
 </details>
 
 <details>
-<summary><b>🔬 Technical Testing Environment (Home Lab)</b></summary><br>
+<summary><b>🔬 Technical Testing Environment ( Home Lab )</b></summary><br>
 <div align="left">
-&nbsp; &nbsp; &nbsp; &nbsp; Verification before publication is a core principle. Every technical write-up, attack vector, and script archived<br>
-&nbsp; &nbsp; &nbsp; &nbsp; here is first simulated, analyzed, and broken down within a fully isolated virtualized research environment :<br>
+&nbsp; &nbsp; &nbsp; &nbsp; Verification before publication is a core principle. Every technical write-up, attack vector, and script archived here<br>
+&nbsp; &nbsp; &nbsp; &nbsp; is first simulated, analyzed, and broken down within a fully isolated virtualized research environment :<br><br>
   <ul>
     <li>&nbsp; &nbsp; 🛡️ <b>Offensive Platform :</b> Custom Kali Linux / Parrot OS deployments tailored for penetration testing.</li>
     <li>&nbsp; &nbsp; 🖥️ <b>Hypervisor Matrix :</b> VMware Workstation & Oracle VirtualBox infrastructure for secure sandbox isolation.</li>
@@ -107,11 +107,11 @@
 
 <h3 align="left">🛠️ Tools & Ecosystem</h3>
 <div>
-&nbsp; &nbsp; &nbsp; &nbsp; This documentation and writing ecosystem is powered by modern developer tools to maintain clean,<br>
-&nbsp; &nbsp; &nbsp; &nbsp; standard-compliant formatting ✨ :<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; This documentation and writing ecosystem is powered by modern developer tools to maintain clean, standard<br>
+&nbsp; &nbsp; &nbsp; &nbsp; compliant formatting ✨ :<br><br>
 <ul>
   <li>&nbsp; &nbsp; <b>Hashnode API :</b> Managing content distribution and web rendering.</li>
-  <li>&nbsp; &nbsp; <b>Markdown (MD) :</b> Crafting platform-agnostic, lightweight technical documentation.</li>
+  <li>&nbsp; &nbsp; <b>Markdown ( MD ) :</b> Crafting platform-agnostic, lightweight technical documentation.</li>
   <li>&nbsp; &nbsp; <b>Git Automation :</b> Keeping the local archive in absolute sync with live web deployment.</li>
 </ul>
 </div>
@@ -130,7 +130,7 @@
 
 <hr>
 
-<h3 align="left">⚠️ Disclaimer</h3>
+<h3 align="left">⚠️ Repository Disclaimer</h3>
 <div>
 &nbsp; &nbsp; &nbsp; &nbsp; This repository is created for educational purposes only. I am committed to <b>Ethical Hacking</b>. Any unauthorized <br>
 &nbsp; &nbsp; &nbsp; &nbsp; use of these techniques against systems without prior consent is strictly illegal.
