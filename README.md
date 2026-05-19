@@ -10,8 +10,7 @@
 &nbsp; &nbsp; &nbsp; &nbsp; Welcome to my centralized technical writing archive. This repository serves as a permanent, version-controlled<br>
 &nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published on my platform is mirrored here.
 &nbsp; &nbsp; &nbsp; &nbsp; here. <br><br>
-&nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where my thoughts transform into structured
-&nbsp; &nbsp; &nbsp; &nbsp; knowledge.
+&nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where thoughts takes a structured shape.
 </div>
 
 <hr>
@@ -21,9 +20,11 @@
 &nbsp; &nbsp; &nbsp; &nbsp; To ensure maximum readability and seamless offline navigation, this repository maps my publication categories<br>
 &nbsp; &nbsp; &nbsp; &nbsp; into clear, dedicated domains :<br><br>
   <ul>
-    <li>&nbsp; &nbsp; <b>01-Cybersecurity :</b> Technical write-ups, active defense concepts, and threat analysis.</li>
-    <li>&nbsp; &nbsp; <b>02-Development :</b> Programming paradigms, scripting automation, and tool building.</li>
-    <li>&nbsp; &nbsp; <b>03-Tech-Insights :</b> Analytical views on emerging technologies and industry standards.</li>
+    <li>&nbsp; &nbsp; <b>01-IT-Fundamentals :</b> Core concepts in networking, Linux/Windows administration, and computing essentials.</li>
+    <li>&nbsp; &nbsp; <b>02-Web-Penetration-Testing :</b> Deep-dives into web vulnerabilities, OWASP Top 10, and application security.</li>
+    <li>&nbsp; &nbsp; <b>03-Network-&-OS-Offensive :</b> Notes on infrastructure hacking, active directory, cloud, and system exploitation.</li>
+    <li>&nbsp; &nbsp; <b>04-Automation-&-Scripting :</b> Practical security tooling, exploit modifications, and automation using Python & Bash.</li>
+    <li>&nbsp; &nbsp; <b>05-CTF-&-Lab-Writeups :</b> Step-by-step walkthroughs for platforms like TryHackMe, HackTheBox, and PortSwigger.</li>
     <li>&nbsp; &nbsp; <b>assets/ :</b> A centralized folder housing all original diagrams, assets, and cover images.</li>
   </ul>
 </div>
@@ -35,17 +36,52 @@
 <div align="left">
 <ul>
   <!-- Category 1 -->
-  <li>📂 <a href="#">Cybersecurity & Offensive Notes</a>
+  <li>📂 <a href="#">IT Fundamentals Writeups</a>
     <ul>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
       <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
       <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
     </ul>
   </li>
   <br>
   <!-- Category 2 -->
-  <li>📂 <a href="#">Development & Scripting</a>
+  <li>📂 <a href="#">Web Penetration Testing</a>
     <ul>
-      <li>📝 <a href="#">Article-Title-3.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
+    </ul>
+  </li>
+  <br>
+  <!-- Category 3 -->
+  <li>📂 <a href="#">Network and OS Offensive</a>
+    <ul>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
+    </ul>
+  </li>
+  <br>
+  <!-- Category 4 -->
+  <li>📂 <a href="#">Automation and Scripting</a>
+    <ul>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
+    </ul>
+  </li>
+  <br>
+  <!-- Category 5 -->
+  <li>📂 <a href="#">CTF and Lab Writeups</a>
+    <ul>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-1.md</a> — <i>Brief one-sentence description of the article.</i></li>
+      <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
     </ul>
   </li>
 </ul>
@@ -53,22 +89,24 @@
 </details>
 
 <details>
-<summary><b>📊 Blog Analytics & Publication Metrics</b></summary><br><br>
-<table width="100%">
-  <tr><th colspan="2">📍 Current Blog Status</th></tr>
-  <tr>
-    <td><b>Live Platform</b></td>
-    <td><a href="https://hashnode.com/@mira3zzeldin">mira3zzeldin.hashnode.dev</a></td>
-  </tr>
-  <tr>
-    <td><b>Primary Focus</b></td>
-    <td>Infosec, Networking, Python/Bash Automation, Tech Tutorials</td>
-  </tr>
-  <tr>
-    <td><b>Backup Sync Strategy</b></td>
-    <td>Automated via Hashnode GitHub Integration (Every publish/update triggers a commit)</td>
-  </tr>
-</table>
+<summary><b>🛠️ Tech Stack & Learning Arsenal</b></summary><br>
+<div align="left">
+  <!-- Core Operating Systems -->
+  <img src="https://shields.io" alt="Linux" />
+  <img src="https://shields.io" alt="Windows" />
+  
+  <!-- Scripting languages -->
+  <img src="https://shields.io" alt="Python" />
+  <img src="https://shields.io" alt="Bash" />
+  
+  <!-- Platforms & Tools -->
+  <img src="https://shields.io" alt="Git" />
+  <img src="https://shields.io" alt="Markdown" />
+</div>
+<br>
+<div align="left">
+  &nbsp; &nbsp; <b>Current Sprint:</b> Mastering core routing, switching protocols, and setting up lab infrastructures.
+</div>
 <br><hr><br>
 </details>
 
