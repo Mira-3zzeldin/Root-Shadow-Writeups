@@ -89,17 +89,15 @@
 </details>
 
 <details>
-<summary><b>📊 Blog Analytics & Publication Metrics</b></summary><br>
+<summary><b>📊 Live Blog Analytics (Dynamic from Hashnode)</b></summary><br>
 <div align="left">
-  &nbsp; &nbsp; <strong>⚡ Live Deployment Status</strong>
-  <br><br>
-  <!-- Hashnode Custom Banner/Card Structure -->
-  <a href="https://hashnode.com" target="_blank">
-    <code>Hashnode Badge</code>
-  </a>
-      <code>Sync Badge</code>
   
-  <br><br>
+  <!-- HASHNODE-STATS:START -->
+  <!-- السكربت سيقوم بكتابة الإحصائيات الحية هنا تلقائياً كل يوم -->
+  &nbsp; &nbsp; 🔄 <i>Fetching live data from Hashnode API...</i>
+  <!-- HASHNODE-STATS:END -->
+
+  <br>
   <ul>
     <li><b>Pipeline:</b> Live Blog <a href="https://hashnode.com">mira3zzeldin.hashnode.dev</a> ➡️ Automated GitHub Commit.</li>
     <li><b>Operational Mode:</b> Continuous Integration (CI) on every new technical publication.</li>
@@ -107,6 +105,7 @@
 </div>
 <br><hr><br>
 </details>
+
 
 <hr>
 
