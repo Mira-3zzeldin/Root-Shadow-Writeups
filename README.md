@@ -8,8 +8,7 @@
 <h3 align="left">🚀 Repository Overview</h3>
 <div align="left">
 &nbsp; &nbsp; &nbsp; &nbsp; Welcome to my centralized technical writing archive. This repository serves as a permanent, version-controlled<br>
-&nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published on my platform is mirrored<br>
-&nbsp; &nbsp; &nbsp; &nbsp; here. <br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published is mirrored here.<br><br>
 &nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where thoughts takes a structured shape.
 </div>
 
@@ -92,8 +91,8 @@
 <details>
 <summary><b>🔬 Technical Testing Environment ( Home Lab )</b></summary><br>
 <div align="left">
-&nbsp; &nbsp; &nbsp; &nbsp; Verification before publication is a core principle. Every technical write-up, attack vector, and script archived here<br>
-&nbsp; &nbsp; &nbsp; &nbsp; is first simulated, analyzed, and broken down within a fully isolated virtualized research environment :<br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; Verification before publication is a core principle. Every technical write-up, attack vector, and script archived<br>
+&nbsp; &nbsp; &nbsp; &nbsp; here is first simulated and broken down within a fully isolated virtualized research environment :<br><br>
   <ul>
     <li>&nbsp; &nbsp; 🛡️ <b>Offensive Platform :</b> Custom Kali Linux / Parrot OS deployments tailored for penetration testing.</li>
     <li>&nbsp; &nbsp; 🖥️ <b>Hypervisor Matrix :</b> VMware Workstation & Oracle VirtualBox infrastructure for secure sandbox isolation.</li>
