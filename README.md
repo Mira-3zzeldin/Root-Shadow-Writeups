@@ -90,16 +90,18 @@
 </details>
 
 <details>
-<summary><b>🔮 Inside the Root Shadow Publication</b></summary><br>
+<summary><b>🔬 Technical Testing Environment (Home Lab)</b></summary><br>
 <div align="left">
-&nbsp; &nbsp; &nbsp; &nbsp; <b>Root Shadow</b> is a digital playground where offensive security meets structured synthesis. <br>
-&nbsp; &nbsp; &nbsp; &nbsp; The core goal of this publication is to prove understanding through documentation. <br><br>
-&nbsp; &nbsp; &nbsp; &nbsp; Every article is crafted following a strict pipeline:<br>
-&nbsp; &nbsp; &nbsp; &nbsp; 🧩 <b>Deconstruct:</b> Breaking down standard computing architectures and components.<br>
-&nbsp; &nbsp; &nbsp; &nbsp; 🔬 <b>Analyze:</b> Investigating how these components can be manipulated or misconfigured.<br>
-&nbsp; &nbsp; &nbsp; &nbsp; ✍️ <b>Document:</b> Writing actionable, highly-visual guides to retain and share the knowledge.<br>
+&nbsp; &nbsp; &nbsp; &nbsp; Verification before publication is a core principle. Every technical write-up, attack vector, and<br>
+&nbsp; &nbsp; &nbsp; &nbsp; script archived here is first simulated, analyzed, and broken down within a fully isolated<br>
+&nbsp; &nbsp; &nbsp; &nbsp; virtualized research environment :<br><br>
+  <ul>
+    <li>&nbsp; &nbsp; 🛡️ <b>Offensive Platform :</b> Custom Kali Linux / Parrot OS deployments tailored for penetration testing.</li>
+    <li>&nbsp; &nbsp; 🖥️ <b>Hypervisor Matrix :</b> VMware Workstation & Oracle VirtualBox infrastructure for secure sandbox isolation.</li>
+    <li>&nbsp; &nbsp; 🎯 <b>Target Deployment :</b> Metasploitable instances, vulnerable Linux servers, and live THM/HTB environments.</li>
+  </ul>
 </div>
-<br><hr><br>
+<br>
 </details>
 
 <hr>
