@@ -8,7 +8,7 @@
 <h3 align="left">🚀 Repository Overview</h3>
 <div align="left">
 &nbsp; &nbsp; &nbsp; &nbsp; Welcome to my centralized technical writing archive. This repository serves as a permanent, version-controlled<br>
-&nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published on my platform is mirrored here.
+&nbsp; &nbsp; &nbsp; &nbsp; backup of my <strong>Hashnode Blog</strong>. Every article, code snippet, and tutorial published on my platform is mirrored
 &nbsp; &nbsp; &nbsp; &nbsp; here. <br><br>
 &nbsp; &nbsp; &nbsp; &nbsp; <strong>"Writing is the ultimate tool for structured thinking."</strong> – This is where thoughts takes a structured shape.
 </div>
@@ -23,8 +23,8 @@
     <li>&nbsp; &nbsp; <b>01-IT-Fundamentals :</b> Core concepts in networking, Linux/Windows administration, and computing essentials.</li>
     <li>&nbsp; &nbsp; <b>02-Web-Penetration-Testing :</b> Deep-dives into web vulnerabilities, OWASP Top 10, and application security.</li>
     <li>&nbsp; &nbsp; <b>03-Network-&-OS-Offensive :</b> Notes on infrastructure hacking, active directory, cloud, and system exploitation.</li>
-    <li>&nbsp; &nbsp; <b>04-Automation-&-Scripting :</b> Practical security tooling, exploit modifications, and automation using Python & Bash.</li>
-    <li>&nbsp; &nbsp; <b>05-CTF-&-Lab-Writeups :</b> Step-by-step walkthroughs for platforms like TryHackMe, HackTheBox, and PortSwigger.</li>
+    <li>&nbsp; &nbsp; <b>04-Automation-&-Scripting :</b> Practical security tooling, exploit modifications, and automation.</li>
+    <li>&nbsp; &nbsp; <b>05-CTF-&-Lab-Writeups :</b> Step-by-step walkthroughs for platforms like THM, HTB, and PortSwigger.</li>
     <li>&nbsp; &nbsp; <b>assets/ :</b> A centralized folder housing all original diagrams, assets, and cover images.</li>
   </ul>
 </div>
@@ -84,6 +84,7 @@
       <li>📝 <a href="#">Article-Title-2.md</a> — <i>Brief one-sentence description of the article.</i></li>
     </ul>
   </li>
+  <br>
 </ul>
 </div>
 </details>
@@ -93,48 +94,23 @@
 <div align="left">
 &nbsp; &nbsp; &nbsp; &nbsp; <b>📈 Live Blog Metrics</b>
   <!-- HASHNODE-DATA-START -->
-  - 📝 <b>Total Published Articles:</b> 0
-  - 👥 <b>Newsletter Subscribers:</b> 0
-  - 👁️ <b>Total Publication Views:</b> 0
-  - 📅 <b>Last Article Published:</b> Fetching...
+  <ul>
+    <li>&nbsp; &nbsp; 📝 <b>Total Published Articles:</b> 0</li>
+    <li>&nbsp; &nbsp; 👥 <b>Newsletter Subscribers:</b> 0</li>
+    <li>&nbsp; &nbsp; 👁️ <b>Total Publication Views:</b> 0</li>
+    <li>&nbsp; &nbsp; 📅 <b>Last Article Published:</b> Fetching...</li>
+  </ul>
   <!-- HASHNODE-DATA-END -->
 
   <br>
 
-  <h4>⚙️ Data Pipeline & Synchronization Status</h4>
+&nbsp; &nbsp; &nbsp; &nbsp; <b>⚙️ Data Pipeline & Synchronization Status</b>
   <ul>
-    <li>🛰️ <b>Data Feed:</b> Upstream connection via Hashnode GraphQL API (v2).</li>
-    <li>⚡ <b>Automation Mode:</b> Daily Scheduled Cron Job <code>[0 0 * * *]</code> via GitHub Actions.</li>
-    <li>🟢 <b>Archive Integrity:</b> 100% Synced (All web articles mirrored locally in Markdown).</li>
-    <li>🐳 <b>Runtime Environment:</b> <code>ubuntu-latest</code> virtual runner utilizing <code>Python 3.x</code>.</li>
+    <li>&nbsp; &nbsp; 🛰️ <b>Data Feed :</b> Upstream connection via Hashnode GraphQL API (v2).</li>
+    <li>&nbsp; &nbsp; ⚡ <b>Automation Mode :</b> Daily Scheduled Cron Job <code>[0 0 * * *]</code> via GitHub Actions.</li>
+    <li>&nbsp; &nbsp; 🟢 <b>Archive Integrity :</b> 100% Synced ( All web articles mirrored locally in Markdown ).</li>
+    <li>&nbsp; &nbsp; 🐳 <b>Runtime Environment :</b> <code>ubuntu-latest</code> virtual runner utilizing <code>Python 3.x</code>.</li>
   </ul>
-
-  <br>
-
-  <h4>📝 Deployment Logs (System Health)</h4>
-  <table>
-    <tr>
-      <th>Pipeline Stage</th>
-      <th>Status</th>
-      <th>Engine / Driver</th>
-    </tr>
-    <tr>
-      <td>Hashnode Webhook Trigger</td>
-      <td><code style="color: #10B981;">[ PASS ]</code></td>
-      <td>Continuous Integration (CI)</td>
-    </tr>
-    <tr>
-      <td>GraphQL Payload Extraction</td>
-      <td><code style="color: #10B981;">[ ACTIVE ]</code></td>
-      <td>Python <code>requests</code> module</td>
-    </tr>
-    <tr>
-      <td>Automated Git Push</td>
-      <td><code style="color: #10B981;">[ ENABLED ]</code></td>
-      <td>GitHub Actions Bot</td>
-    </tr>
-  </table>
-
 </div>
 <br><hr><br>
 </details>
