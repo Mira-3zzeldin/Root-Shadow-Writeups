@@ -1,0 +1,25 @@
+# --- System Files (Prevent OS junk) ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Security & Sensitive Data (CRITICAL) ---
+*.log
+*.pcap
+*.pcapng
+credentials.txt
+passwords.txt
+.env
+secret.json
+
+# --- Tools & Temp Files ---
+*.tmp
+*.bak
+.vscode/
+.idea/
+node_modules/
+
+# --- Virtual Environments (If you use Python for scripts) ---
+venv/
+.venv/
+__pycache__/
