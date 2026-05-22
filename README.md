@@ -19,7 +19,7 @@
 &nbsp; &nbsp; &nbsp; &nbsp; To ensure maximum readability and seamless offline navigation, this repository maps my publication categories<br>
 &nbsp; &nbsp; &nbsp; &nbsp; into clear, dedicated domains :<br><br>
   <ul>
-    <li>&nbsp; &nbsp; <b>01-IT-Fundamentals-Writeups :</b> Core concepts in networking, Linux/Windows administration, and computing essentials.</li>
+    <li>&nbsp; &nbsp; <b>01-IT-Fundamentals-Writeups :</b> Core concepts in networking, Linux/Windows administration.</li>
     <li>&nbsp; &nbsp; <b>02-Web-Penetration-Testing :</b> Deep-dives into web vulnerabilities, OWASP Top 10, and application security.</li>
     <li>&nbsp; &nbsp; <b>03-Network-&-OS-Offensive :</b> Notes on infrastructure hacking, active directory, cloud, and system exploitation.</li>
     <li>&nbsp; &nbsp; <b>04-Automation-&-Scripting :</b> Practical security tooling, exploit modifications, and automation.</li>
