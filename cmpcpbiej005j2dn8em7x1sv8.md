@@ -5,6 +5,7 @@ seoDescription: "Learn why secure systems verify evidence instead of trusting cl
 datePublished: 2026-05-19T14:01:30.092Z
 cuid: cmpcpbiej005j2dn8em7x1sv8
 slug: security-principles-trust-is-not-a-feeling
+ogImage: https://cdn.hashnode.com/uploads/og-images/6a0330ea937b84f77988ba5d/009820d0-9f31-4f6b-bc64-ffeb46280c47.png
 tags: software-architecture, cybersecurity, application-security, zerotrust, secure-coding
 
 ---
