@@ -19,8 +19,6 @@ At some point during every payment transaction flow, the server is faced with a 
 
 I didn't start from there. I start with a bug.
 
-* * *
-
 ## The assumption that looked fine
 
 In the early days of InstaShield, the code for payment confirmation looked something like this:
