@@ -36,8 +36,6 @@ But the issue was not the condition — it was performing exactly its intended f
 
 That's the point at which the important question emerged, and it would become one of four core questions asked repeatedly through the system design: **Where did this information actually come from, and can that origin be verified — or only assumed?**
 
-* * *
-
 ## Origin: a claim is not its own evidence
 
 That was when the new trust model came into play. The boolean parameter was stripped away from the API - not merely hidden, but completely removed as a concept. Consequently, the controller simply presents a `matchProof` parameter: an HMAC-SHA256 signature of the fingerprint ID and timestamp, generated using a shared secret. The payment service recomputes this value independently, and discards the entire request if the verification fails.
