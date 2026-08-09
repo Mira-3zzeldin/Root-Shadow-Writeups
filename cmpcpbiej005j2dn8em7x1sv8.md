@@ -19,6 +19,8 @@ At some point during every payment transaction flow, the server is faced with a 
 
 I didn't start from there. I start with a bug.
 
+* * *
+
 ## The assumption that looked fine
 
 In the early days of InstaShield, the code for payment confirmation looked something like this:
@@ -35,6 +37,8 @@ if (matched === true) {
 But the issue was not the condition — it was performing exactly its intended function. The issue was that the data being evaluated had already passed the trust boundary by the time the payment service received it. All `matched: true` means is two words within a JSON body. It doesn't tell you anything about where the data came from. Anyone with the knowledge to recognize the structure of the request can bypass the biometric scan completely and make the payment directly. The test wasn't confirming identity — it was confirming the truthiness of a single boolean variable.
 
 That's the point at which the important question emerged, and it would become one of four core questions asked repeatedly through the system design: **Where did this information actually come from, and can that origin be verified — or only assumed?**
+
+* * *
 
 ## Origin: a claim is not its own evidence
 
