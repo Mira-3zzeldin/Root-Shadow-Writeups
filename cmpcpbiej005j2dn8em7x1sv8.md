@@ -113,16 +113,6 @@ The moment I began viewing each and every trust assertion as an assumption needi
 
 * * *
 
-**Series:** Security Principles — Part I of VI **Next:** Threat Modeling — thinking like the attacker on purpose
+**Series:** Security Principles — Part I of VI
 
-* * *
-
-### For publishing
-
-**SEO Title:** Trust Is Not a Feeling: What a Payment System Actually Verifies
-
-**Meta description:** A security engineer's breakdown of how a biometric fintech payment system moved from trusting client claims to requiring proof — using real architectural decisions from InstaShield as case studies.
-
-**Suggested tags:** security-engineering, application-security, fintech, biometrics, authentication, threat-modeling, appsec
-
-**Suggested slug:** trust-is-not-a-feeling-what-a-payment-system-verifies
+**Next:** Threat Modeling — thinking like the attacker on purpose
