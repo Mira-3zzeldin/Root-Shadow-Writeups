@@ -15,7 +15,7 @@ tags: software-architecture, cybersecurity, application-security, zerotrust, sec
 
 ## What the System Actually Believes
 
-At some point during every payment transaction flow, the server is faced with a decision — authorize the payment or not. Everything else — logging in, scanning, session tokens — all this is just information used by the server to make that decision. The real question then isn't "Is the system secure?" It's narrower and more useful: **when the server decides to move money, what is that decision actually based on?**
+At some point during every payment transaction flow, the server is faced with a decision — authorize the payment or not. Everything else — logging in, scanning, session tokens — all this is just information used by the server to make that decision. The real question then isn't "Is the system secure?" It's narrower and more useful: **When the server decides to move money, what is that decision actually based on?**
 
 I didn't start from there. I start with a bug.
 
@@ -42,13 +42,15 @@ That's the point at which the important question emerged, and it would become on
 
 ## Origin: a claim is not its own evidence
 
-That was when the new trust model came into play. The boolean parameter was stripped away from the API - not merely hidden, but completely removed as a concept. Instead, the controller simply presents a `matchProof` parameter: an HMAC-SHA256 signature of the fingerprint ID and timestamp, generated using a shared secret. The payment service recomputes this value independently, and discards the entire request if the verification fails.
+That was when the new trust model came into play. The boolean parameter was stripped away from the API - not merely hidden, but completely removed as a concept. Consequently, the controller simply presents a `matchProof` parameter: an HMAC-SHA256 signature of the fingerprint ID and timestamp, generated using a shared secret. The payment service recomputes this value independently, and discards the entire request if the verification fails.
 
 This small change in the code is a big change in terms of trust. Previously, the payment service asked, "What did the biometric service say?" Now it asks, "Can I independently verify what the biometric service said?" These questions sound similar but are worlds apart. The first is something anyone who can shape a request can answer. The second involves a cryptographic relationship between two trusted components — one the client has no access to, even if it fully controls the request body.
 
 This is the key case of an issue that kept recurring everywhere else within the system: trust is not extended on the assumption that a component is being honest; rather, it is made unnecessary through requiring evidence.
 
-The interesting part, looking back, the system wasn't failing because these checks were missing. It was failing because it had quietly decided who deserved to be believed.
+The same logic governs how InstaShield treats its real-time payment channel. A WebSocket connection is authenticated, encrypted, and genuinely tied to the right session — but none of that says anything about whether a specific message sent over it is true. A message announcing "payment confirmed" arriving over a trusted connection is still just an assertion carried by that connection, not proof of the state it describes. So the server doesn't treat the content of a WebSocket message as a fact to act on. It treats it as a knock at the door — a signal to go check — and only confirms the actual payment state through a separate, independently authenticated HTTPS request. The channel being secure was never the same claim as the message being true, and collapsing those two would have reintroduced the exact problem the matchProof change was built to remove, just on a different transport.
+
+The interesting part, looking back, is that the system wasn't failing because these checks were missing. It was failing because it had quietly decided who deserved to be believed.
 
 * * *
 
