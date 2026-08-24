@@ -115,6 +115,14 @@ The moment I began viewing each and every trust assertion as an assumption needi
 
 * * *
 
+### Architecture Reference & Verification
+
+The production-grade security architecture, strict verification matrices, and complete compliance maps referenced in this article series are published as an open reference.
+
+Explore the public-safe repository here: 🔗 [InstaShield Security Architecture on GitHub](https://github.com/Mira-3zzeldin/InstaShield-Security-Architecture)
+
+* * *
+
 **Series:** Security Principles — Part I of VI
 
-**Next:** Threat Modeling — thinking like the attacker on purpose
+**Next:** A System is Not its Intended Use — how Can This Be Abused?
