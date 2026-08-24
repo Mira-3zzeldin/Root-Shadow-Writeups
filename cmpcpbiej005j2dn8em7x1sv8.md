@@ -2,7 +2,7 @@
 title: "Security Principles - Part I: Trust Is Not a Feeling"
 seoTitle: "Trust-Security: Why Systems Need Evidence, Not Assumptions"
 seoDescription: "Learn why secure systems verify evidence instead of trusting claims, through lessons from a biometric fintech wallet and Zero Trust design."
-datePublished: 2026-05-19T14:01:30.092Z
+datePublished: 2026-08-15T06:00:00.000Z
 cuid: cmpcpbiej005j2dn8em7x1sv8
 slug: security-principles-trust-is-not-a-feeling
 cover: https://cdn.hashnode.com/uploads/covers/6a0330ea937b84f77988ba5d/c076a6de-bd41-4fd7-bd3e-242619f86136.png
