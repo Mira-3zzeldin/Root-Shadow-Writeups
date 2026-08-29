@@ -17,7 +17,7 @@ tags: software-architecture, cybersecurity, application-security, zerotrust, sec
 
 At some point during every payment transaction flow, the server is faced with a decision — authorize the payment or not. Everything else — logging in, scanning, session tokens — all this is just information used by the server to make that decision. The real question then isn't "Is the system secure?" It's narrower and more useful: **When the server decides to move money, what is that decision actually based on?**
 
-I didn't start from there. I start with a bug.
+I didn't start from there. I started with a bug.
 
 * * *
 
