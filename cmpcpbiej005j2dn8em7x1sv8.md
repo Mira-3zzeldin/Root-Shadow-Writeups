@@ -15,7 +15,7 @@ tags: software-architecture, cybersecurity, application-security, zerotrust, sec
 
 ## What the System Actually Believes
 
-At some point during every payment transaction flow, the server is faced with a decision — authorize the payment or not. Everything else — logging in, scanning, session tokens — all this is just information used by the server to make that decision. The real question then isn't "Is the system secure?" It's narrower and more useful: **When the server decides to move money, what is that decision actually based on?**
+At some point during every payment transaction flow, the server is faced with a decision, authorize the payment or not. Everything else — logging in, scanning, session tokens — all this is just information used by the server to make that decision. The real question then isn't "Is the system secure?" It's narrower and more useful: **When the server decides to move money, what is that decision actually based on?**
 
 I didn't start from there. I started with a bug.
 
@@ -34,7 +34,7 @@ if (matched === true) {
 
 `matched` was delivered by the biometric service — a standalone hardware terminal (ZK fingerprint scanner) — over the network, to the payment service. On paper, this seemed sensible: scan fingerprint, compare with template stored in server, get result, authorize payment if match.
 
-But the issue was not the condition — it was performing exactly its intended function. The issue was that the data being evaluated had already passed the trust boundary by the time the payment service received it. All `matched: true` means is two words within a JSON body. It doesn't tell you anything about where the data came from. Anyone with the knowledge to recognize the structure of the request can bypass the biometric scan completely and make the payment directly. The test wasn't confirming identity — it was confirming the truthiness of a single boolean variable.
+But the issue was not the condition, it was performing exactly its intended function. The issue was that the data being evaluated had already passed the trust boundary by the time the payment service received it. All `matched: true` means is two words within a JSON body. It doesn't tell you anything about where the data came from. Anyone with the knowledge to recognize the structure of the request can bypass the biometric scan completely and make the payment directly. The test wasn't confirming identity, it was confirming the truthiness of a single boolean variable.
 
 That's the point at which the important question emerged, and it would become one of four core questions asked repeatedly through the system design: **Where did this information actually come from, and can that origin be verified — or only assumed?**
 
@@ -44,11 +44,11 @@ That's the point at which the important question emerged, and it would become on
 
 That was when the new trust model came into play. The boolean parameter was stripped away from the API - not merely hidden, but completely removed as a concept. Consequently, the controller simply presents a `matchProof` parameter: an HMAC-SHA256 signature of the fingerprint ID and timestamp, generated using a shared secret. The payment service recomputes this value independently, and discards the entire request if the verification fails.
 
-This small change in the code is a big change in terms of trust. Previously, the payment service asked, "What did the biometric service say?" Now it asks, "Can I independently verify what the biometric service said?" These questions sound similar but are worlds apart. The first is something anyone who can shape a request can answer. The second involves a cryptographic relationship between two trusted components — one the client has no access to, even if it fully controls the request body.
+This small change in the code is a big change in terms of trust. Previously, the payment service asked, "What did the biometric service say?" Now it asks, "Can I independently verify what the biometric service said?" These questions sound similar but are worlds apart. The first is something anyone who can shape a request can answer. The second involves a cryptographic relationship between two trusted components, one the client has no access to, even if it fully controls the request body.
 
 This is the key case of an issue that kept recurring everywhere else within the system: trust is not extended on the assumption that a component is being honest; rather, it is made unnecessary through requiring evidence.
 
-The same logic governs how InstaShield treats its real-time payment channel. A WebSocket connection is authenticated, encrypted, and genuinely tied to the right session — but none of that says anything about whether a specific message sent over it is true. A message announcing "payment confirmed" arriving over a trusted connection is still just an assertion carried by that connection, not proof of the state it describes. So the server doesn't treat the content of a WebSocket message as a fact to act on. It treats it as a knock at the door — a signal to go check — and only confirms the actual payment state through a separate, independently authenticated HTTPS request. The channel being secure was never the same claim as the message being true, and collapsing those two would have reintroduced the exact problem the matchProof change was built to remove, just on a different transport.
+The same logic governs how InstaShield treats its real-time payment channel. A WebSocket connection is authenticated, encrypted, and genuinely tied to the right session, but none of that says anything about whether a specific message sent over it is true. A message announcing "payment confirmed" arriving over a trusted connection is still just an assertion carried by that connection, not proof of the state it describes. So the server doesn't treat the content of a WebSocket message as a fact to act on. It treats it as a knock at the door — a signal to go check — and only confirms the actual payment state through a separate, independently authenticated HTTPS request. The channel being secure was never the same claim as the message being true, and collapsing those two would have reintroduced the exact problem the matchProof change was built to remove, just on a different transport.
 
 The interesting part, looking back, is that the system wasn't failing because these checks were missing. It was failing because it had quietly decided who deserved to be believed.
 
@@ -56,7 +56,7 @@ The interesting part, looking back, is that the system wasn't failing because th
 
 ## Time: proof of identity settled, but settled *when*?
 
-Origin was just the first dimension. The problems were arising during payment system development, but none of the questions were particular to payments — it applies to virtually any system that handles information across a trust boundary. Even when the claim is eventually traced to a trusted source, there is another, less obvious assumption behind it: the fact that was true once will remain true.
+Origin was just the first dimension. The problems were arising during payment system development, but none of the questions were particular to payments, it applies to virtually any system that handles information across a trust boundary. Even when the claim is eventually traced to a trusted source, there is another, less obvious assumption behind it: the fact that was true once will remain true.
 
 Status of KYC would be an example here. The user could be KYC'ed when he starts the payment transaction, but his KYC status would be immediately revoked, seconds later, before the payment transaction confirms. When the system does the verification only once at the start of transaction, the window appears that can be exploited — the transaction that has all the appearances of legitimate one is based on false fact that becomes false before the money gets transferred.
 
