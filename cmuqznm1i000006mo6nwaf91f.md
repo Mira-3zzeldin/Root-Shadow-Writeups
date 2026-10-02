@@ -1,5 +1,5 @@
 ---
-title: "Security Principles - Part 3: Hardcoding the Safe Zones"
+title: "Security Principles - Part III: Hardcoding the Safe Zones"
 seoTitle: "Secure by Design: Decisions Have to Exist Before Problems"
 seoDescription: "Breaking down the architectural decisions in a biometric fintech payment system that were made before any vulnerability forced them."
 datePublished: 2026-09-10T07:30:00.000Z
